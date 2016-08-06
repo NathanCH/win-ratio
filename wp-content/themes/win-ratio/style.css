@@ -1,0 +1,20 @@
+/*
+Theme Name: Win Ratio
+Author: Nathan Charrois
+Author URI: http://www.cetan.ca
+Version: 1.0
+Description: Custom Wordpress theme for Win Ratio.
+ */
+
+/* --------------------------------------------------------------
+The purpose of this CSS file is to
+	1. Provide meta infomration on the theme.
+	2. Import main CSS stylesheet and 3rd party files.
+
+ ---------------------------------------------------------------*/
+
+/* --------------------------------------------------------------
+	Imports
+---------------------------------------------------------------*/
+
+@import url('public/css/style.css');
