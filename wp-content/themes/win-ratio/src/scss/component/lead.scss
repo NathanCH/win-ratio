@@ -1,0 +1,19 @@
+.Lead{
+
+	text-align: center;
+	color: white;
+	font-family: $font-family;
+	padding: 190px 0 0 0;
+
+	&__brand{
+		font-weight: lighter;
+		font-size: 34px;
+		line-height: 64px;
+		text-transform: uppercase;
+	}
+
+	&__tag{
+		font-size: 46px;
+		line-height: 64px;
+	}
+}

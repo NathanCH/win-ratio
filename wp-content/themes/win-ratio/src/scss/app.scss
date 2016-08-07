@@ -1,6 +1,13 @@
 @import 'vendor/normalize';
 @import 'vendor/foundation-grid';
 
-@import 'base/layout';
 @import 'base/variables';
 @import 'base/typography';
+
+@import 'layout/default';
+@import 'layout/header';
+
+@import 'component/hero';
+@import 'component/logo';
+@import 'component/menu';
+@import 'component/lead';

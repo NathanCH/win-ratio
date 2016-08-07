@@ -1,0 +1,13 @@
+.Header{
+
+	float: clear;
+
+	.Header__logo{
+		float: left;
+	}
+
+	.Header__menu{
+		float: right;
+		margin: 30px 0;
+	}
+}

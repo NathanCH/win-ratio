@@ -6,6 +6,9 @@ var cleancss = require('gulp-clean-css');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
 var watch = require('gulp-watch');
+var browsersync = require('browser-sync').create();
+
+
 
 gulp.task('scss', function()
 {
@@ -22,10 +25,14 @@ gulp.task('js', function() {
 
 });
 
-gulp.task('watch', function() {
-	gulp.watch('./src/scss/**/*', ['scss']);
+gulp.task('serve', function() {
+	browsersync.init({
+		proxy: 'http://localhost/2016/win-ratio/'
+	});
+
+	gulp.watch('./src/scss/**/*', ['scss']).on('change', browsersync.reload);
 	gulp.watch('./src/js/**/*', ['js']);
 });
 
 gulp.task('build', ['scss','js']);
-gulp.task('default', ['scss', 'js', 'watch']);
+gulp.task('init', ['scss', 'js', 'serve']);

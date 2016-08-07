@@ -4,6 +4,13 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
+html {
+  font-size: 100%;
+  box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 .row {
   max-width: 62.5rem;
   margin-left: auto;
