@@ -1,0 +1,12 @@
+// "Perfect fourth" type scale.
+$type-scale: (
+	small: 0.75rem,
+	body: 1rem,
+	large: 1.333rem
+);
+
+// Helper function returns. Does this over complicate things?
+@function type-scale($level)
+{
+	@return map-get($type-scale, $level);
+}
