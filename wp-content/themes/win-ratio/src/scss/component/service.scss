@@ -1,0 +1,26 @@
+.Service{
+
+	margin: 50px 0;
+
+	&__content{
+		display: table;
+		height: 300px;
+	}
+
+	&__photo{
+		max-width: 100%;
+
+		@media screen and (max-width: $break-mobile) {
+			display: none;
+		}
+	}
+
+	&__container{
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	&__button{
+		margin-top: 25px;
+	}
+}

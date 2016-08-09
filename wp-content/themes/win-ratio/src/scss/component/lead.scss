@@ -5,15 +5,28 @@
 	font-family: $font-family;
 	padding: 190px 0 0 0;
 
+	@media screen and (max-width: $break-mobile) {
+		padding: 100px 0;
+	}
+
 	&__brand{
 		font-weight: lighter;
 		font-size: 34px;
 		line-height: 64px;
 		text-transform: uppercase;
+
+		@media screen and (max-width: $break-mobile) {
+			font-size: 24px;
+		}
 	}
 
 	&__tag{
 		font-size: 46px;
 		line-height: 64px;
+
+		@media screen and (max-width: $break-mobile) {
+			font-size: 28px;
+			line-height: 38px;
+		}
 	}
 }

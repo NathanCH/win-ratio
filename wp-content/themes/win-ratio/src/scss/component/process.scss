@@ -1,0 +1,30 @@
+.Process{
+	text-align: center;
+
+	@media screen and (max-width: $break-mobile) {
+		margin: 25px 0;
+	}
+
+	&__icon{
+		background: transparent;
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+		margin: 0 auto;
+		box-shadow: inset 0px 0px 0px 2px $color-primary;
+
+		.fa{
+			color: $color-primary;
+			line-height: 60px;
+			font-size: 22px;
+		}
+	}
+
+	&__label{
+
+	}
+
+	&__text{
+		padding: 0 20px;
+	}
+}

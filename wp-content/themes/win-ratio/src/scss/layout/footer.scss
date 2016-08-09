@@ -1,0 +1,44 @@
+.SiteBottom{
+	background: $color-blue-light;
+	padding: 75px 0;
+
+	&__content{
+		.Heading-3{
+			margin: 0 0 25px;
+		}
+
+		@media screen and (max-width: $break-mobile) {
+			text-align: center;
+		}
+	}
+
+	&__logo{
+		float: right;
+
+		@media screen and (max-width: $break-mobile) {
+			float: none;
+
+			.Logo{
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.Footer{
+	background: $color-blue-dark;
+	padding: 50px;
+
+	&__copyright{
+		@media screen and (max-width: $break-mobile) {
+			text-align: center;
+		}
+	}
+
+	&__menu .SocialMenu{
+		@media screen and (max-width: $break-mobile) {
+			margin-top: 25px;
+			text-align: center;
+		}
+	}
+}

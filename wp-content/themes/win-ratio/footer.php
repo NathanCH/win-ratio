@@ -2,19 +2,17 @@
 		<div class="row">
 			<div class="small-12 medium-8 columns">
 				<div class="SiteBottom__content">
-					<div class="row">
-						<div class="small-12 column">
-							<h3 class="Heading-3 Heading--white">Contact</h3>
-						</div>
-					</div>
-					<ul class="Menu Menu--alt row">
-						<li class="Menu__item">
-							<i class="fa fa-phone"></i> 604-928-3534
-						</li>
-						<li class="Menu__item">
-							<i class="fa fa-envelope"></i> sarah@winratio.ca
-						</li>
-					</ul>	
+					<div class="Heading-3 Heading--white">Contact</div>
+					<div class="Menu Menu--alt">
+						<ul class="Menu__nav">
+							<li class="Menu__item">
+								<i class="fa fa-phone"></i> 604-928-3534
+							</li>
+							<li class="Menu__item">
+								<i class="fa fa-envelope"></i> sarah@winratio.ca
+							</li>
+						</ul>
+					</div>	
 				</div>
 			</div>
 			<div class="small-12 medium-4 columns">
@@ -63,5 +61,12 @@
 	</section>
 	<?php get_template_part('templates/google-analytics'); ?>
 	<?php wp_footer(); ?>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+	<script>
+		$('.Menu__toggle').on('click', function() {
+			$(this).parent('.Menu').toggleClass('Menu--open');
+			$('body').toggleClass('Body--noscroll');
+		});
+	</script>
 	</body>
 </html>

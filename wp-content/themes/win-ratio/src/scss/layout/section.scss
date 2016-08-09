@@ -1,0 +1,15 @@
+.Section{
+	padding: 75px 0;
+
+	&--grey{
+		background: $color-concrete;
+	}
+
+	&--bridge{
+		background: url('../../public/img/background-bridge.jpg') no-repeat bottom right;
+
+		@media screen and (max-width: $break-mobile) {
+			background-position: bottom center;
+		}
+	}
+}

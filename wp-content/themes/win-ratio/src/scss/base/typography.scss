@@ -1,12 +1,23 @@
-// "Perfect fourth" type scale.
-$type-scale: (
-	small: 0.75rem,
-	body: 1rem,
-	large: 1.333rem
-);
+.Heading-1{}
 
-// Helper function returns. Does this over complicate things?
-@function type-scale($level)
-{
-	@return map-get($type-scale, $level);
+.Heading-2{
+	font-size: 28px;
+	font-weight: 400;
+	color: $color-heading;
+	text-transform: uppercase;
+}
+
+.Heading-3{
+	font-size: 22px;
+	font-weight: 400;
+	color: $color-heading;
+}
+
+.Heading--white{
+	color: white;
+}
+
+.Paragraph{
+	color: $color-body;
+	line-height: 26px;
 }

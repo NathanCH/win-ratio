@@ -4,4 +4,8 @@
 	height: 84px;
 	display: block;
 	text-indent: -9999px;
+
+	&--white{
+		background-image: url('../../public/img/logo-white.png');
+	}
 }
